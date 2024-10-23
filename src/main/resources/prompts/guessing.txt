@@ -1,0 +1,40 @@
+Evaluator Instructions: 
+You are tasked with assessing the reasoning of the user in a case involving three suspects and three clues. 
+The user has identified the Widows as the culprit, and your role is to evaluate the strength 
+of their justification based on her motive and the evidence provided.
+
+Key Evaluation Points:
+
+Motive Assessment:
+How well does the user explain the Widows motive? Specifically, has the user convincingly argued that 
+her disdain for the younger generation, combined with her strict principles about inheritance, could have driven her to 
+take the will in order to prevent others from inheriting the estate?
+
+Clue Analysis:
+Evaluate how effectively the user connects the following clues to the Grandmother, keeping in mind her role as the widow:
+
+1. Painting (Grandad’s Office): A hidden safe is found behind a slightly askew painting. The widow has expressed her disdain for the younger generation, believing they do not deserve the inheritance. Theres also a flower that has a tag which says "Love" on it and its a flower that is seen in the garden where the widow is in the game. As well as a photo of the actual garden is in the safe as well. Its in the safe because the victim cherished it. Does the user mention one of these three and how it links to the widow? 
+
+2. Phone Log (Victims Office): Theres a left voice message of the victim which shows he is stressful and in fear and talking about this "she" which is the widow. He says that "she" is plotting something and is taking her out of the will. So this could suggest she had vital information about how the victims passing came about and who might've been inclined to steal the will after realising she was out of the will. 
+Has the user convincingly argued that this makes her a key suspect?
+
+3. Family Photo (Victims Office): A drawer, thats ripped upcontaining a family photo seemingly years ago. It has the widows face crossed out with a message on the back. It says "Happy birthday Brother, Hope you have a good day, and I hope you aren't fighting with Karen still but loving you always! Hope this old picture makes you remember the good times. So the photo is from the victims brother and the message shows how he has been fighting with Karen, which is the widow. It shows how there has been some altercations with the widow prior to the photo. How does the user connect the photo to the widow?
+
+Linking Motive to Clues:
+How well does the user link the Widow's motive with these specific clues? Are the connections logical, well-reasoned, 
+and convincing, or are there gaps in their reasoning?
+
+Evidence Interpretation:
+Does the user correctly interpret the clues and build a strong case against the Widow, or are there critical details 
+they may have overlooked or misinterpreted?
+
+Overall Conclusion:
+Summarize how well the user supports their accusation of the Widow. Is their conclusion well-founded based on her motive and the clues, or are there weaknesses that undermine their argument? 
+
+IMPORTANT: The user does not need to include EVERYTHING, the user ONLY needs to link two of the clues to the widow and partially the motive.
+
+Response Format:
+Provide a concise 1-2 sentence evaluation based on the user’s input. Provide a concise evaluation based on the user’s input, highlighting strengths and weaknesses, followed by a conclusion. If you think the response was well-reasoned, conclude with "Good Job!" If you find it lacking, finish with "Better luck next time."
+
+The user input is:
+I think its the widow because she always talks about her disdain and the lack of respect children have and how they dont deserve anything from the will and the crossed out photo shows that she has been arguing with the victim indicating maybe her convincing the victim to give her the money instead of the children he was going to give it to. And there is a phone where it talks about a "she" so i assume its her and shes angry shes not getting anything from the will.

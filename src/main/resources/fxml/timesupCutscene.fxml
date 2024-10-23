@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" focusTraversable="true" prefHeight="600.0" prefWidth="1076.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nz.ac.auckland.se206.controllers.TimeUpController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1076.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/blurredcrimescene.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="timesUpPane" layoutX="189.0" layoutY="199.0" prefHeight="202.0" prefWidth="699.0" style="-fx-background-color: #c1b8b5; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: red; -fx-border-width: 4px;">
+         <children>
+            <Label layoutX="117.0" layoutY="74.0" prefHeight="87.0" prefWidth="483.0" text="Make a Guess Now" textFill="#750000" wrapText="true">
+               <font>
+                  <Font name="Arial" size="53.0" />
+               </font>
+            </Label>
+            <Label layoutX="170.0" layoutY="39.0" prefHeight="65.0" prefWidth="373.0" text="You have run out of time" textAlignment="CENTER" textFill="#750000" wrapText="true">
+               <font>
+                  <Font name="Arial" size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

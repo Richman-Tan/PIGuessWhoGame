@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#onKeyPressed" prefHeight="599.0" prefWidth="1067.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nz.ac.auckland.se206.controllers.Suspect3RoomController">
+   <children>
+      <ImageView fx:id="backgroundimg" fitHeight="610.0" fitWidth="1067.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/suspectson.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="timerpane" layoutX="22.0" layoutY="25.0" opacity="0.75" prefHeight="45.0" prefWidth="101.0" style="-fx-background-color: #c1b8b5; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: #3f2218; -fx-border-width: 4px;" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Label fx:id="lbltimer" alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="8.0" text="Label">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <HBox alignment="CENTER" layoutX="21.0" layoutY="20.0" prefHeight="67.0" prefWidth="770.0" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="guessButton" mnemonicParsing="false" onAction="#onGuessClick" opacity="0.8" prefHeight="28.0" prefWidth="121.0" style="-fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: black; -fx-background-insets: 0; -fx-border-image-insets: 0; -fx-border-insets: 0; -fx-border-color: #3f2218; -fx-border-width: 4px;" stylesheets="@../css/button.css" text="Make a guess" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <ImageView fitHeight="333.0" fitWidth="410.0" layoutX="-21.0" layoutY="133.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/userChatBoxS2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="313.0" fitWidth="454.0" layoutX="141.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-width: 10px;">
+         <image>
+            <Image url="@../images/suspect2ChatBox.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="suspectChatBox" editable="false" layoutX="188.0" layoutY="36.0" prefHeight="115.0" prefWidth="229.0" promptText=" The suspect is thinking..." style="-fx-prompt-text-fill: white; -fx-background-color: transparent; -fx-border-color: transparent; -fx-control-inner-background: BEC6B9; -fx-text-fill: white;" stylesheets="@../css/scrollBarSuspect2.css" wrapText="true" />
+      <ImageView fitHeight="150.0" fitWidth="15.0" layoutX="299.0" layoutY="249.0" opacity="0.8" pickOnBounds="true" preserveRatio="true" rotate="270.0">
+         <image>
+            <Image url="@../images/sendArrow.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="userChatBox" layoutX="62.0" layoutY="179.0" prefHeight="86.0" prefWidth="227.0" promptText="You are waiting for a response..." style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-control-inner-background: transparent; -fx-text-fill: white; -fx-prompt-text-fill: white;" stylesheets="@../css/textArea.css" wrapText="true" />
+      <Circle fx:id="sendButton" fill="#1f93ff00" layoutX="306.0" layoutY="257.0" onMouseClicked="#onSend" radius="11.0" stroke="#4d6543" strokeType="INSIDE" />
+      <ImageView fx:id="basemapimg" fitHeight="480.0" fitWidth="780.0" layoutX="11.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <image>
+            <Image url="@../images/basemap2.png" />
+         </image>
+         <effect>
+            <DropShadow height="137.45" radius="71.53999999999999" width="150.71">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <Label fx:id="lblareastatus" layoutX="132.0" layoutY="286.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="widowiconimg" fitHeight="45.0" fitWidth="46.0" layoutX="180.0" layoutY="471.0" onMouseClicked="#onGrandmotherClick" pickOnBounds="true" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="170.0">
+         <image>
+            <Image url="@../images/widowiconimg.png" />
+         </image>
+         <effect>
+            <DropShadow height="54.17" radius="29.3475" width="65.22">
+               <color>
+                  <Color red="1.0" green="0.9629629850387573" blue="0.9629629850387573" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <ImageView fx:id="grandsoniconimg" fitHeight="52.0" fitWidth="48.0" layoutX="76.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="80.0">
+         <image>
+            <Image url="@../images/grandsoniconimg.png" />
+         </image>
+         <effect>
+            <DropShadow height="54.17" radius="29.3475" width="65.22">
+               <color>
+                  <Color red="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <ImageView fx:id="brothericonimg" fitHeight="40.0" fitWidth="46.0" layoutX="278.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="270.0">
+         <image>
+            <Image url="@../images/brothericonimg.png" />
+         </image>
+         <effect>
+            <DropShadow height="54.17" radius="29.3475" width="65.22">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <ImageView fx:id="menuclosedimg" fitHeight="82.0" fitWidth="348.0" layoutX="18.0" layoutY="432.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="12.0">
+         <image>
+            <Image url="@../images/menuclosed.png" />
+         </image>
+         <effect>
+            <DropShadow height="72.59" radius="25.1075" width="29.84">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <ImageView fx:id="topofmenubtn" fitHeight="111.0" fitWidth="380.0" layoutX="18.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/topofmenu.png" />
+         </image>
+         <effect>
+            <DropShadow height="29.84" radius="14.42" width="29.84">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <ImageView fx:id="crimesceneiconimg" fitHeight="58.0" fitWidth="67.0" layoutX="127.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="127.0" AnchorPane.topAnchor="351.0">
+         <image>
+            <Image url="@../images/crimescenebtn.png" />
+         </image>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

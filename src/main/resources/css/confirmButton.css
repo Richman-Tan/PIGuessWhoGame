@@ -1,0 +1,15 @@
+.button {
+  -fx-background-color: #750E0E;
+  -fx-text-fill: white;
+  -fx-border-color: #960909;
+  -fx-font-family: 'Courier New';
+  -fx-font-weight: 800;
+  -fx-padding: 5 10 5 10;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.75), 10, 0.5, 0, 2);
+}
+
+.button:hover {
+  -fx-background-color: #540707;
+  -fx-border-color: #b40909;
+  -fx-cursor: hand;
+}

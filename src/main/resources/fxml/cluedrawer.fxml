@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nz.ac.auckland.se206.controllers.ClueDrawerController">
+   <children>
+      <!-- Timer Pane -->
+      <Pane fx:id="labelPane" layoutX="72.0" layoutY="75.0" opacity="0.75" prefHeight="45.0" prefWidth="101.0" style="-fx-background-color: #c1b8b5; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: #3f2218; -fx-border-width: 4px;" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Label fx:id="timerLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="9.0" layoutY="4.0" prefHeight="36.0" prefWidth="82.0" text="Label">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+
+      <!-- Tile Grid Pane for Sliding Game -->
+      <GridPane fx:id="tileGridPane" hgap="5.0" layoutX="100.0" layoutY="150.0" vgap="5.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="150.0" GridPane.halignment="CENTER">
+         <!-- This is where the tiles will be dynamically added by the controller -->
+      </GridPane>
+   </children>
+</AnchorPane>

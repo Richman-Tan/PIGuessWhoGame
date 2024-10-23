@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="600.0" prefWidth="1076.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nz.ac.auckland.se206.controllers.ClueSafeController">
+   <children>
+      <Pane fx:id="safecontent">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="1076.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../images/cluesafeimages/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="362.0" fitWidth="262.0" layoutX="184.0" layoutY="139.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/cluesafeimages/pinpad.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="247.0" fitWidth="158.0" layoutX="239.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cluesafeimages/pinpadopened.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="531.0" fitWidth="391.0" layoutX="431.0" layoutY="45.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/cluesafeimages/safeopen.png" />
+               </image>
+            </ImageView>
+            <Group fx:id="notes" layoutX="512.0" layoutY="466.2453918457031" onMouseClicked="#onNote">
+               <children>
+                  <ImageView fitHeight="81.0" fitWidth="83.0" layoutY="-11.764373779296875" pickOnBounds="true" preserveRatio="true" rotate="121.6">
+                     <image>
+                        <Image url="@../images/cluesafeimages/notesfloor.png" />
+                     </image>
+                     <rotationAxis>
+                        <Point3D x="1.0" />
+                     </rotationAxis>
+                  </ImageView>
+               </children>
+            </Group>
+            <Label layoutX="474.0" layoutY="67.0" prefHeight="17.0" prefWidth="111.0" text="〇 一 九" />
+            <ImageView fitHeight="49.0" fitWidth="26.0" layoutX="307.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cluesafeimages/fingerprint.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="49.0" fitWidth="26.0" layoutX="266.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cluesafeimages/fingerprint.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="49.0" fitWidth="26.0" layoutX="344.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cluesafeimages/fingerprint.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="noteoverlay" layoutY="-3.0">
+         <children>
+            <Rectangle fx:id="safeoverlay" arcHeight="5.0" arcWidth="5.0" height="602.0" layoutY="3.0" opacity="0.7" stroke="BLACK" strokeType="INSIDE" width="1076.0" />
+            <Group fx:id="note3" layoutX="265.0" layoutY="98.0" onMouseClicked="#onPage" rotate="-24.8">
+               <children>
+                  <ImageView fitHeight="386.0" fitWidth="231.0" layoutX="45.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/cluesafeimages/flower.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group fx:id="note2" layoutX="320.0" layoutY="98.0" onMouseClicked="#onPage" rotate="-13.2">
+               <children>
+                  <Group layoutX="26.0" layoutY="-157.0" rotate="-7.8">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="288.0" layoutX="53.35035705566406" layoutY="201.11943817138672" rotate="28.0" stroke="TRANSPARENT" strokeType="INSIDE" width="220.0" y="3.0" />
+                        <ImageView fitHeight="197.0" fitWidth="260.0" layoutX="33.90733337402344" layoutY="249.62034606933594" pickOnBounds="true" rotate="-61.6">
+                           <image>
+                              <Image url="@../images/cluesafeimages/photoSafe.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Group>
+               </children>
+            </Group>
+            <Group fx:id="note1" layoutX="353.0" layoutY="129.0" onMouseClicked="#onPage">
+               <children>
+                  <ImageView fitHeight="466.0" fitWidth="268.0" layoutX="99.66851806640625" pickOnBounds="true" preserveRatio="true" rotate="15.4">
+                     <image>
+                        <Image url="@../images/cluesafeimages/parchment.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="218.0" layoutY="315.0" prefHeight="24.0" prefWidth="56.0" rotate="17.5" text="- Liang" wrapText="true">
+                     <font>
+                        <Font name="Script MT Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="164.0" layoutY="52.0" prefHeight="145.0" prefWidth="186.0" rotate="17.5" text="My wife has been acting strange recently, she's been spouting on and on about our grandkids and how the way they will handle my inheritance. I'm worried for her, I hope she does not do anything crazy" wrapText="true">
+                     <font>
+                        <Font name="Script MT Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="125.0" layoutY="172.0" prefHeight="160.0" prefWidth="177.0" rotate="17.5" text="I don't have much time, I know one of my closest are scheming to get my will, I hear them always talking on the phone. " wrapText="true">
+                     <font>
+                        <Font name="Script MT Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+         </children>
+      </Pane>
+      <Pane fx:id="labelPane" layoutX="62.0" layoutY="65.0" opacity="0.75" prefHeight="45.0" prefWidth="101.0" style="-fx-background-color: #c1b8b5; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: #3f2218; -fx-border-width: 4px;" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Label fx:id="timerLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="9.0" layoutY="4.0" prefHeight="36.0" prefWidth="82.0" text="Label">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+   <rotationAxis>
+      <Point3D y="1.0" z="1.0" />
+   </rotationAxis>
+</AnchorPane>

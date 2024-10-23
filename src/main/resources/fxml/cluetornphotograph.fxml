@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="puzzlePane" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nz.ac.auckland.se206.controllers.TornPhotographController">
+   <ImageView fx:id="backofphotoimg" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/cluedrawimages/backofphoto.png" />
+      </image>
+   </ImageView>
+   <ImageView fx:id="imagebg" fitHeight="655.0" fitWidth="973.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/cluedrawimages/photoframebg.png" />
+      </image>
+   </ImageView>
+   <ImageView fx:id="framebyitself" fitHeight="555.0" fitWidth="1050.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/cluedrawimages/photoframonly.png" />
+      </image>
+   </ImageView>
+    <!-- Background Image of the completed puzzle for visual guidance -->
+    <ImageView fx:id="backgroundwithgame1" fitHeight="551.0" fitWidth="950.0" layoutY="1.0" opacity="1.0">
+        <image>
+            <Image url="@../images/cluedrawimages/puzzlephoto.png" />
+        </image>
+    </ImageView>
+   <ImageView fx:id="backgroundwithgame" fitHeight="562.0" fitWidth="975.0" pickOnBounds="true">
+      <image>
+         <Image url="@../images/cluedrawimages/table.png" />
+      </image>
+   </ImageView>
+   <ImageView fx:id="photoframeimg" fitHeight="597.0" fitWidth="972.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/cluedrawimages/justphotoframeimg.png" />
+      </image>
+   </ImageView>
+
+    <!-- Outline ImageViews for each puzzle piece -->
+    <ImageView fx:id="outlinePiece1" fitHeight="553.0" fitWidth="952.0" layoutX="-2.0" layoutY="-1.0" opacity="0.0">
+        <image>
+            <Image url="@../images/cluedrawimages/piece3.PNG" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="outlinePiece2" fitHeight="553.0" fitWidth="952.0" layoutX="-1.0" layoutY="-1.0" opacity="0.0">
+        <image>
+            <Image url="@../images/cluedrawimages/piece5.PNG" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="outlinePiece3" fitHeight="553.0" fitWidth="952.0" layoutY="-1.0" opacity="0.0">
+        <image>
+            <Image url="@../images/cluedrawimages/piece1.PNG" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="outlinePiece4" fitHeight="552.0" fitWidth="952.0" layoutX="-1.0" opacity="0.0">
+        <image>
+            <Image url="@../images/cluedrawimages/piece4.PNG" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="outlinePiece5" fitHeight="551.0" fitWidth="951.0" opacity="0.0">
+        <image>
+            <Image url="@../images/cluedrawimages/piece7.PNG" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="outlinePiece6" fitHeight="552.0" fitWidth="950.0" opacity="0.0">
+        <image>
+            <Image url="@../images/cluedrawimages/piece9.PNG" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="outlinePiece7" fitHeight="559.0" fitWidth="948.0" layoutX="1.0" layoutY="-2.0" opacity="0.0">
+        <image>
+            <Image url="@../images/cluedrawimages/piece6.PNG" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="outlinePiece8" fitHeight="545.0" fitWidth="951.0" layoutY="4.0" opacity="0.0">
+        <image>
+            <Image url="@../images/cluedrawimages/piece2.PNG" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="outlinePiece9" fitHeight="545.0" fitWidth="945.0" layoutX="1.0" layoutY="3.0" opacity="0.0">
+        <image>
+            <Image url="@../images/cluedrawimages/piece8.PNG" />
+        </image>
+    </ImageView>
+
+    <!-- ImageView elements for draggable puzzle pieces -->
+    <ImageView fx:id="piece1" fitHeight="105.0" fitWidth="200.0" layoutX="25.0" layoutY="363.0">
+      <image>
+         <Image url="@../images/cluedrawimages/piecelarge1.PNG" />
+      </image></ImageView>
+    <ImageView fx:id="piece2" fitHeight="86.0" fitWidth="158.0" layoutX="671.0" layoutY="292.0">
+      <image>
+         <Image url="@../images/cluedrawimages/piecelarge2.PNG" />
+      </image></ImageView>
+    <ImageView fx:id="piece3" fitHeight="100" fitWidth="200" layoutX="250" layoutY="450">
+      <image>
+         <Image url="@../images/cluedrawimages/piecelarge3.PNG" />
+      </image></ImageView>
+    <ImageView fx:id="piece4" fitHeight="184.0" fitWidth="318.0" layoutX="-21.0" layoutY="159.0" preserveRatio="true">
+      <image>
+         <Image url="@../images/cluedrawimages/piecelarge4.PNG" />
+      </image></ImageView>
+    <ImageView fx:id="piece5" fitHeight="135.0" fitWidth="236.0" layoutX="-17.0" layoutY="26.0" preserveRatio="true">
+      <image>
+         <Image url="@../images/cluedrawimages/piecelarge5.PNG" />
+      </image></ImageView>
+    <ImageView fx:id="piece6" fitHeight="119.0" fitWidth="210.0" layoutX="476.0" layoutY="398.0">
+      <image>
+         <Image url="@../images/cluedrawimages/piecelarge6.PNG" />
+      </image></ImageView>
+    <ImageView fx:id="piece7" fitHeight="140.0" fitWidth="276.0" layoutX="656.0" layoutY="31.0" preserveRatio="true">
+      <image>
+         <Image url="@../images/cluedrawimages/piecelarge7.PNG" />
+      </image></ImageView>
+    <ImageView fx:id="piece8" fitHeight="71.0" fitWidth="118.0" layoutX="774.0" layoutY="176.0">
+      <image>
+         <Image url="@../images/cluedrawimages/piecelarge8.PNG" />
+      </image></ImageView>
+    <ImageView fx:id="piece9" fitHeight="100" fitWidth="200" layoutX="650.0" layoutY="406.0">
+      <image>
+         <Image url="@../images/cluedrawimages/piecelarge9.PNG" />
+      </image></ImageView>
+   <AnchorPane fx:id="textbox" prefHeight="200.0" prefWidth="200.0">
+      <children>
+         <ImageView fx:id="banners" fitHeight="559.0" fitWidth="973.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../images/cluedrawimages/textbubble.png" />
+            </image>
+         </ImageView>
+      </children>
+   </AnchorPane>
+
+                         <!-- Black overlay for transition effect -->
+    <AnchorPane fx:id="blackOverlay" layoutX="269.0" opacity="0.0" prefWidth="705.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0" />
+</AnchorPane>
